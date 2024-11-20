@@ -1,0 +1,155 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsXN3whhCNKP8ycq5SUyRX8WwBB3TaQYHsA&s);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006a4e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.paquetes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Tarjetas de paquetes turísticos */
+.paquete {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.paquete:hover {
+    transform: translateY(-5px);
+}
+
+.paquete h2 {
+    font-size: 1.5em;
+    color: #006a4e;
+    margin-bottom: 10px;
+}
+
+.paquete p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.paquete button {
+    background-color: #006a4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paquete button:hover {
+    background-color: #005239;
+}
+
+/* Información adicional */
+.info-adicional {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* Formulario de pago */
+#formulario-pago {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Más ancho */
+    margin: 30px auto;
+    padding: 15px 40px; /* Reduce altura ajustando el padding */
+}
+
+#formulario-pago h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#formulario-pago label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+#formulario-pago input[type="text"],
+#formulario-pago input[type="email"],
+#formulario-pago input[type="month"],
+#formulario-pago select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formulario-pago button {
+    background-color: #006a4e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#formulario-pago button:hover {
+    background-color: #005239;
+}
+
+/* Información para el pago */
+#info-tarjeta, #info-banco {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .paquete {
+        width: 100%;
+    }
+
+    #formulario-pago {
+        width: 90%;
+    }
+}

@@ -1,0 +1,79 @@
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* Estilos del contenedor del formulario */
+        .container {
+            max-width: 800px;
+            width: 90%;
+            height: 1100px;
+            padding: 3rem;
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Título */
+        h2 {
+            color: #006400; /* Verde oscuro */
+            margin-bottom: 1.5rem;
+        }
+
+        /* Estilos de los inputs */
+        .form-group {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        label {
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        input[type=number],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        /* Estilo del botón */
+        .btn-submit {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #006400; /* Verde oscuro */
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #004d00; /* Un verde aún más oscuro */
+        }
+        .cabe{
+            background-color: #f0f0f0;
+            padding: 0.5rem;
+        }

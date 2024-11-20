@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #004d4d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces ocupen varias filas */
+    justify-content: space-around;
+    background-color: #004d4d;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center; /* Centrar texto en caso de cambio de diseño */
+}
+
+nav a:hover {
+    background-color: #008080;
+    border-radius: 10px;
+    color: aquamarine;
+}
+
+.banner {
+    background-image: url(https://www.goesgo.com.mx/Portals/1173/Images/SELVA%20DE%20CHIAPAS/chiapas-selva-banner.jpg?ver=erLsi_wRZNSvXHnEStFyew%3D%3D&timestamp=1676923449672);
+    background-size: cover;
+    background-position: center; /* Centrar imagen de fondo */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 300px; /* Altura predeterminada */
+    color: beige;
+    text-shadow: 
+        2px 2px 0px black, /* Sombra roja hacia la esquina inferior derecha */
+        -2px 2px 0px black, /* Sombra roja hacia la esquina inferior izquierda */
+        2px -2px 0px black, /* Sombra roja hacia la esquina superior derecha */
+        -2px -2px 0px black; /* Sombra roja hacia la esquina superior izquierda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw; /* Ajustar texto según el ancho de la ventana */
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.services, .destinations {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en filas */
+    justify-content: space-around;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.services div, .destinations div {
+    width: 30%; /* Tres columnas en pantallas grandes */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.services div:hover, .destinations div:hover {
+    transform: translateY(-5px);
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #004d4d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+.dropdown a {
+    color: beige;
+}
+
+.reserva a {
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    font-size: 17px;
+    top: 80px;
+    background-color: #004d4d;
+    color: beige;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.reserva a:hover {
+    background-color: #0b5a5a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botonaso {
+    position: relative;
+    left: 850px;
+    bottom: 35px;
+}
+
+.botonaso:hover {
+    background-color: #0b5a5a;
+    border-radius: 10px;
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Reducir el tamaño del encabezado */
+    }
+
+    .services div, .destinations div {
+        width: 90%; /* Los elementos ocupan toda la fila */
+    }
+
+    .banner {
+        height: 200px; /* Reducir la altura del banner */
+        font-size: 5vw; /* Texto más pequeño en móviles */
+    }
+
+    nav {
+        flex-direction: column; /* Navegación en columna */
+    }
+
+    .reserva a {
+        position: static; /* Ajustar posición para móviles */
+        margin: 10px auto;
+        display: block;
+    }
+
+    .botonaso {
+        position: static; /* Quitar posición fija */
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .services div, .destinations div {
+        width: 45%; /* Dos columnas en tablets */
+    }
+
+    .banner {
+        height: 250px; /* Ajustar altura del banner */
+    }
+
+    h1 {
+        font-size: 5vw; /* Tamaño intermedio del encabezado */
+    }
+}
+.image-container {
+    width: 100%; /* El contenedor ocupará el 100% del espacio disponible */
+    max-width: 390px; /* Máximo ancho de las imágenes */
+    margin: 0 auto; /* Centra las imágenes dentro del contenedor */
+    text-align: center; /* Centra el texto y las imágenes */
+}
+
+.image-container img {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción original */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mejorar el diseño */
+}
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas en pantallas pequeñas */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+}
+
+.destinations .image-container {
+    flex: 1 1 calc(33.333% - 20px); /* Tres columnas con espacio entre ellas */
+    max-width: 390px; /* Máximo ancho por elemento */
+}
+
+@media (max-width: 768px) {
+    .destinations .image-container {
+        flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .destinations .image-container {
+        flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+    }
+}
+

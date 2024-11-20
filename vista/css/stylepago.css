@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Cabecera */
+header {
+    background-color: #00796b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Paquetes */
+.paquete {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paquete h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+}
+
+.paquete p {
+    margin: 0.5rem 0;
+}
+
+/* Botones */
+.boton-alerta {
+    background-color: #004d40;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-alerta:hover {
+    background-color: #00251a;
+}

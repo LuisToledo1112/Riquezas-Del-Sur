@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f0f4f8;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #00695c;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar nav a:hover {
+    background-color: #004d40;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+.admin-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="email"],
+.admin-form input[type="number"],
+.admin-form input[type="password"],
+.admin-form input[type="date"],
+.admin-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+section button {
+    background-color: #00695c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #004d40;
+}
+
+.BotonesAccion{
+    text-decoration: none;
+    color: beige;
+    background-color: #004d40;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.BotonesAccion1{
+    text-decoration: none;
+    color: beige;
+    background-color: #004d40;
+    border-radius: 10px;
+    position: relative;
+    top: -5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+.BotonesAccion2{
+    text-decoration: none;
+    color: beige;
+    background-color: #004d40;
+    border-radius: 10px;
+    bottom: 0px;
+    padding: 3px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.BotonesAccion:hover{
+    background-color: #00695c;
+    color: #333;
+    transform: translateX(10px);
+}
+.BotonesAccion1:hover{
+    background-color: #00695c;
+    color: #333;
+    transform: translateX(-10px);
+}
+.BotonesAccion2:hover{
+    background-color: #00695c;
+    color: #333;
+    transform: translateX(-10px);
+}
+
+
+
+
